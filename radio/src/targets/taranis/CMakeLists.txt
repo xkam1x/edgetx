@@ -84,7 +84,7 @@ elseif(PCB STREQUAL X9D+)
     set(FLAVOUR x9d+)
     set(CPU_TYPE STM32F4)
     set(CPU_TYPE_FULL STM32F407xE)  # for size report
-    add_definitions(-DSTM32F407xx)
+    add_definitions(-DSTM32F40_41xxx -DSTM32F407xx)
     set(LINKER_SCRIPT targets/taranis/stm32f4_flash.ld)
     set(AUX_SERIAL ON)
     set(STATUS_LEDS NO)
